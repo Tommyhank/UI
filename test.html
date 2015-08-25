@@ -12,6 +12,7 @@
 <body ng-controller="testController">
 <div class="container">
     <span>{{question}}</span><br/>
+<<<<<<< HEAD
     <form class ="form">
         <label>
             <input ng-change="show()" type="radio" ng-model="userAnswer" value= "A">
@@ -58,5 +59,49 @@
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f8c637f46642484"></script>
 
 </footer>
+=======
+    <form >
+        <label>
+            <input ng-disabled="submitted" ng-change="show()" type="radio" ng-model="userAnswer" value= "A">
+            {{choiceA}}
+        </label><br/>
+        <label>
+            <input ng-disabled="submitted" ng-change="show()" type="radio" ng-model="userAnswer" value="B">
+            {{choiceB}}
+        </label><br/>
+        <label>
+            <input ng-disabled="submitted" ng-change="show()" type="radio" ng-model="userAnswer" value="C">
+            {{choiceC}}
+        </label><br/>
+        <label>
+            <input ng-disabled="submitted" ng-change="show()" type="radio" ng-model="userAnswer" value="D">
+            {{choiceD}}
+        </label><br/>
+
+<!--        <div class="well col-md-12">
+            <div ng-repeat="data in data">
+                {{data.question}}
+                <div ng-repeat="option in data.choice">{{option}}
+
+                </div><input type="text" ng-model="data.correctAnswer">
+            </div>
+        </div>
+        {{data}}-->
+    </form>
+    <button ng-hide="i==0" ng-click="prev()"> previous</button>
+    <button ng-hide="i==(length-1)" ng-click="next()"> next</button>
+    <button onclick="location.href='index.html';"> back</button>
+    <span ng-hide=answerIsRight> {{wrongAnswer}}</span><br/>
+    <span ng-hide=answerIsRight>{{explanation}}</span><br/>
+    <div ng-show="i==(length-1)||submitted">
+        <button ng-disabled="submitted" ng-click="getScore()"> submit</button><br/>
+        <span>{{finalScore}}</span>
+    </div>
+
+
+
+
+</div>
+>>>>>>> 241845f97a615013235f1fa5a273b2c3f6a65e9d
 </body>
 </html>

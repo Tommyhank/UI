@@ -9,14 +9,32 @@
     <link href="styleSheets/bootstrap.min.css" rel="stylesheet" />
 </head>
 <body ng-controller="practiceController">
-<span>{{question}}</span><br/>
-<span>{{choiceA}}</span><br/>
-<span>{{choiceB}}</span><br/>
-<span>{{choiceC}}</span><br/>
-<span>{{choiceD}}</span><br/>
-<span>{{answer}}</span><br/>
-<span>{{explanation}}</span><br/>
-<button ng-click="next()"> next</button>
-<button onclick="location.href='index.html';"> back</button>
+
+<div class="container">
+    <span>{{question}}</span><br/>
+    <form >
+        <label>
+            <input ng-change="show()" type="radio" ng-model="userAnswer" value= "A">
+            {{choiceA}}
+        </label><br/>
+        <label>
+            <input ng-change="show()" type="radio" ng-model="userAnswer" value="B">
+            {{choiceB}}
+        </label><br/>
+        <label>
+            <input ng-change="show()" type="radio" ng-model="userAnswer" value="C">
+            {{choiceC}}
+        </label><br/>
+        <label>
+            <input ng-change="show()" type="radio" ng-model="userAnswer" value="D">
+            {{choiceD}}
+        </label><br/>
+    </form>
+    <span ng-show=showAnswer> right answer: {{answer}}</span><br/>
+    <span ng-show=showAnswer>{{explanation}}</span><br/>
+    <button ng-click="next()"> next</button>
+    <button onclick="location.href='index.html';"> back</button>
+</div>
+
 </body>
 </html>

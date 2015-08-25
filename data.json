@@ -10,12 +10,12 @@
     "explanation":"explanations2"
   },{
   "question":"question3",
-  "choice":"choices3",
+  "choice":["A3","B3","C3","D3"],
   "answer":"answers3",
   "explanation":"explanations3"
 },{
   "question":"question4",
-  "choice":"choices4",
+  "choice":["A4","B4","C4","D4"],
   "answer":"answers4",
   "explanation":"explanations4"
 },{

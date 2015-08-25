@@ -7,16 +7,47 @@
     <script src="scripts/ui-bootstrap-tpls-0.13.3.min.js"></script>
     <script src="scripts/project.js"></script>
     <link href="styleSheets/bootstrap.min.css" rel="stylesheet" />
+    <link href="styleSheets/stylesheet.css" rel="stylesheet" />
 </head>
 <body ng-controller="practiceController">
-<span>{{question}}</span><br/>
-<span>{{choiceA}}</span><br/>
-<span>{{choiceB}}</span><br/>
-<span>{{choiceC}}</span><br/>
-<span>{{choiceD}}</span><br/>
-<span>{{answer}}</span><br/>
-<span>{{explanation}}</span><br/>
-<button ng-click="next()"> next</button>
-<button onclick="location.href='index.html';"> back</button>
+
+<div class="container">
+    <span>{{question}}</span><br/>
+    <form >
+        <label>
+            <input ng-change="show()" type="radio" ng-model="userAnswer" value= "A">
+            {{choiceA}}
+        </label><br/>
+        <label>
+            <input ng-change="show()" type="radio" ng-model="userAnswer" value="B">
+            {{choiceB}}
+        </label><br/>
+        <label>
+            <input ng-change="show()" type="radio" ng-model="userAnswer" value="C">
+            {{choiceC}}
+        </label><br/>
+        <label>
+            <input ng-change="show()" type="radio" ng-model="userAnswer" value="D">
+            {{choiceD}}
+        </label><br/>
+    </form>
+    <span ng-show=showAnswer> right answer: {{answer}}</span><br/>
+    <span ng-show=showAnswer>{{explanation}}</span><br/>
+    <button ng-click="next()" class="btn btn-info"> next</button>
+    <button onclick="location.href='index.html';" class="btn btn-warning"> back</button>
+</div>
+<footer><a href="http://thatjsdude.com/interview/index.html">Go to more Frontend Interview questions</a>
+    <br/><br/>
+    <div class="addthis_toolbox addthis_default_style ">
+        <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+        <a class="addthis_button_tweet"></a>
+        <a class="addthis_button_pinterest_pinit" pi:pinit:layout="horizontal"></a>
+        <a class="addthis_counter addthis_pill_style"></a>
+    </div>
+    <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f8c637f46642484"></script>
+
+</footer>
+
 </body>
 </html>

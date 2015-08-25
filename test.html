@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+    <script src="scripts/angular.js"></script>
+    <script src="scripts/ui-bootstrap-tpls-0.13.3.min.js"></script>
+    <script src="scripts/project.js"></script>
+    <link href="styleSheets/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body ng-controller="testController">
+<span>{{question}}</span><br/>
+<span>{{choiceA}}</span><br/>
+<span>{{choiceB}}</span><br/>
+<span>{{choiceC}}</span><br/>
+<span>{{choiceD}}</span><br/>
+<span>{{answer}}</span><br/>
+<span>{{explanation}}</span><br/>
+<button ng-click="next()"> next</button>
+<button onclick="location.href='index.html';"> back</button>
+</body>
+</html>

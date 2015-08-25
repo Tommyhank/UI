@@ -28,12 +28,23 @@
             <input ng-change="show()" type="radio" ng-model="userAnswer" value="D">
             {{choiceD}}
         </label><br/>
+
+<!--        <div class="well col-md-12">
+            <div ng-repeat="data in data">
+                {{data.question}}
+                <div ng-repeat="option in data.choice">{{option}}
+
+                </div><input type="text" ng-model="data.correctAnswer">
+            </div>
+        </div>
+        {{data}}-->
     </form>
     <span ng-show=showAnswer> right answer: {{answer}}</span><br/>
     <span ng-show=showAnswer>{{explanation}}</span><br/>
     <button ng-click="prev()"> previous</button>
     <button ng-click="next()"> next</button>
     <button onclick="location.href='index.html';"> back</button>
+
 </div>
 </body>
 </html>

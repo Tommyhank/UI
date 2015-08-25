@@ -38,6 +38,7 @@ angular.module('myApp',['ui.bootstrap'])
         var latest = 0;
         var userAnswers = [];
         $http.get('data.json').success(function (data) {
+            //$scope.data = data;
             localData=data;
             getData($scope.i);
         });

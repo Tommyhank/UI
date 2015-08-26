@@ -13,19 +13,19 @@
     <span>{{question}}</span><br/>
     <form >
         <label>
-            <input ng-change="show()" type="radio" ng-model="userAnswer" value= "A">
+            <input ng-disabled="submitted" ng-change="show()" type="radio" ng-model="userAnswer" value= "A">
             {{choiceA}}
         </label><br/>
         <label>
-            <input ng-change="show()" type="radio" ng-model="userAnswer" value="B">
+            <input ng-disabled="submitted" ng-change="show()" type="radio" ng-model="userAnswer" value="B">
             {{choiceB}}
         </label><br/>
         <label>
-            <input ng-change="show()" type="radio" ng-model="userAnswer" value="C">
+            <input ng-disabled="submitted" ng-change="show()" type="radio" ng-model="userAnswer" value="C">
             {{choiceC}}
         </label><br/>
         <label>
-            <input ng-change="show()" type="radio" ng-model="userAnswer" value="D">
+            <input ng-disabled="submitted" ng-change="show()" type="radio" ng-model="userAnswer" value="D">
             {{choiceD}}
         </label><br/>
 
@@ -39,11 +39,18 @@
         </div>
         {{data}}-->
     </form>
-    <span ng-show=showAnswer> right answer: {{answer}}</span><br/>
-    <span ng-show=showAnswer>{{explanation}}</span><br/>
-    <button ng-click="prev()"> previous</button>
-    <button ng-click="next()"> next</button>
+    <button ng-hide="i==0" ng-click="prev()"> previous</button>
+    <button ng-hide="i==(length-1)" ng-click="next()"> next</button>
     <button onclick="location.href='index.html';"> back</button>
+    <span ng-hide=answerIsRight> {{wrongAnswer}}</span><br/>
+    <span ng-hide=answerIsRight>{{explanation}}</span><br/>
+    <div ng-show="i==(length-1)||submitted">
+        <button ng-disabled="submitted" ng-click="getScore()"> submit</button><br/>
+        <span>{{finalScore}}</span>
+    </div>
+
+
+
 
 </div>
 </body>

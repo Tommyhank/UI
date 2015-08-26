@@ -1,102 +1,102 @@
 [{
-"question":"question1",
-"choice":["A1","B1","C1","D1"],
+"question":"1. Which of the following is used to represent Visited hyperlink?",
+"choice":["A.:visited","B.:clicked","C.:focus","D.:link"],
 "answer":"A",
-"explanation":"explanations1"
+"explanation":"explanations::visited represents visited hyperlink."
 },{
-"question":"question2",
-"choice":["A2","B2","C2","D2"],
+"question":"2. In______, :active applies only to hyperlinks whereas, other browsers allow it to be applied to any element.",
+"choice":["A.IE7","B.Google Chrome22","C.Firefox 16.0.1","D.Firefox 12.0.1"],
 "answer":"A",
-"explanation":"explanations2"
+"explanation":"explanations:In IE7 :active applies only to hyperlinks whereas, other browsers allow it to be applied to any element."
 },{
-"question":"question3",
-"choice":["A3","B3","C3","D3"],
+"question":"3.Why JavaScript is called as Lightweight Programming Language?",
+"choice":["A.because we can add programming functionally inside JS","B.because JS is client side scripting","C.because JS can provide programming functionality inside but up to certain extend","D.because JS is available free of cost"],
+"answer":"C",
+"explanation":"explanations:JS is called as”Lightweight Programming Language”because it can include programming functionality but does not perform stronger operations like Java and C++."
+},{
+"question":"4.Local Browser used for validations on the Web Pages uses______.",
+"choice":["A.CSS","B.HTML","C.JAVA","D.JS"],
+"answer":"D",
+"explanation":""
+},{
+"question":"5.Which property is used to specify typefaces?",
+"choice":["A.font-family","B.font-name","C.font-face","D.font-type"],
 "answer":"A",
-"explanation":"explanations3"
+"explanation":""
 },{
-"question":"question4",
-"choice":["A4","B4","C4","D4"],
+"question":"6.HTML Stands for______.",
+"choice":["A.Hyper Text Makeup Language","B.Hyper Text Markup Lnaguage","C.None of these","D.Hyper Tech Markup Language"],
+"answer":"B",
+"explanation":""
+},{
+"question":"7.HTML Tags are generally written in______.",
+"choice":["A.Angle","B.Squart","C.Round","D.Curly"],
 "answer":"A",
-"explanation":"explanations4"
+"explanation":""
 },{
-"question":"question5",
-"choice":["A5","B5","C5","D5"],
+"question":"8.Which is the method that operates on the return value of $()?",
+"choice":["A.show()","B.css()","C.click()","D.done()"],
+"answer":"B",
+"explanation":"explanations:The css() method operator on the jQuery returned by $(),and returns that the same object, so that the show()method can be invoked next in a compact”method chain”."
+},{
+"question":"9.How many type faces inside property”font-family”?",
+"choice":["A.1","B.Maximum 2","C.No Limit","D.Maximum 3"],
+"answer":"C",
+"explanation":"explanations:The font-family property may use more than one typeface."
+},{
+"question":"10.Select all the correct option(s).State the correct place of JS Code inside HTML-",
+"choice":["A.Inside Body","B.Inside Head","C.All of these","D.Inside Single Javascript File"],
+"answer":"C",
+"explanation":""
+},{
+"question":"11.HTML markup language is a set of Markup______.",
+"choice":["A.Attributes","B.Sets","C.Groups","D.Tags"],
+"answer":"D",
+"explanation":""
+},{
+"question":"12.Which of the following is used for parsing JSON text?",
+"choice":["A.jQuery.each()","B.jQuery.parseJSON()","C.jQuery.noConflict()","D.None of the mentioned"],
+"answer":"B",
+"explanation":"jQuery.parseJSON()is used for parsing JSON text."
+},{
+"question":"13.______attribute is used to specify the character encoding used in an external script file.",
+"choice":["A.type","B.character","C.None of These","D.charset"],
+"answer":"D",
+"explanation":""
+},{
+"question":"14.PC’s running with Windows 3.x will have______.",
+"choice":["A..htl","B..htm","C..hml","D..html"],
+"answer":"B",
+"explanation":"explanations:Windows 3.x only allows three letters after the dot.MAC OS and Windows 95/98 allow four,or more."
+},{
+"question":"15.HTML was firstly proposed in year______.",
+"choice":["A.2000","B.1995","C.1990","D.1980"],
+"answer":"C",
+"explanation":""
+},{
+"question":"16.JavaScript Code can be called by using______.",
+"choice":["A.Function/Method","B.Preprocessor","C.RMI","D.Triggering Event"],
 "answer":"A",
-"explanation":"explanations5"
+"explanation":""
 },{
-"question":"question6",
-"choice":["A6","B6","C6","D6"],
-"answer":"A",
-"explanation":"explanations6"
+"question":"17.Multiple font faces are separated by______.",
+"choice":["A.Semicolon","B.Comma","C.Dot","D.Slash"],
+"answer":"B",
+"explanation":""
 },{
-"question":"question7",
-"choice":["A4","B4","C4","D4"],
-"answer":"answers7",
-"explanation":"explanations7"
+"question":"18.Which attribute is used to specifies that the script is executed when the page has finished parsing?(only for external scripts)",
+"choice":["A.async","B.defer","C.parse","D.typE"],
+"answer":"B",
+"explanation":""
 },{
-"question":"question8",
-"choice":["A4","B4","C4","D4"],
-"answer":"answers8",
-"explanation":"explanations8"
+"question":"19.Which syntax is used to describe elements in CSS?",
+"choice":["A.Protectors","B.Selectors","C.Both a and b","D.None of the mentioned"],
+"answer":"B",
+"explanation":"explanations:CSS stylesheets have a very powerful syntax,known as selectors, for describing elements or sets of elements within a document."
 },{
-"question":"question9",
-"choice":["A4","B4","C4","D4"],
-"answer":"answers9",
-"explanation":"explanations9"
-},{
-"question":"question10",
-"choice":["A4","B4","C4","D4"],
-"answer":"answers10",
-"explanation":"explanations10"
-},{
-"question":"question11",
-"choice":["A4","B4","C4","D4"],
-"answer":"answers11",
-"explanation":"explanations11"
-},{
-"question":"question12",
-"choice":["A4","B4","C4","D4"],
-"answer":"answers12",
-"explanation":"explanations12"
-},{
-"question":"question13",
-"choice":["A4","B4","C4","D4"],
-"answer":"answers13",
-"explanation":"explanations13"
-},{
-"question":"question14",
-"choice":["A4","B4","C4","D4"],
-"answer":"answers14",
-"explanation":"explanations14"
-},{
-"question":"question15",
-"choice":["A4","B4","C4","D4"],
-"answer":"answers15",
-"explanation":"explanations15"
-},{
-"question":"question16",
-"choice":["A4","B4","C4","D4"],
-"answer":"answers16",
-"explanation":"explanations16"
-},{
-"question":"question17",
-"choice":["A4","B4","C4","D4"],
-"answer":"answers17",
-"explanation":"explanations17"
-},{
-"question":"question18",
-"choice":["A4","B4","C4","D4"],
-"answer":"answers18",
-"explanation":"explanations18"
-},{
-"question":"question19",
-"choice":["A4","B4","C4","D4"],
-"answer":"answers19",
-"explanation":"explanations19"
-},{
-"question":"question20",
-"choice":["A4","B4","C4","D4"],
-"answer":"answers20",
-"explanation":"explanations20"
+"question":"20.Which of the following is an equivalent replacement of $(document).ready(f)?",
+"choice":["A.jQuery(f)","B.$(f)","C.#(f)","D.None of the mentioned"],
+"answer":"B",
+"explanation":"explanations:The equivalent replacement of $(document).ready(f)is$(f)."
 }
 ]

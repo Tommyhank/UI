@@ -1,0 +1,102 @@
+[{
+  "question":"Which attribute is used to specifies that the script is executed when the page has finished parsing?(only for external scripts)",
+  "choice":["A.async","B.defer","C.parse","D.typE"],
+  "answer":"B",
+  "explanation":""
+},{
+  "question":"Which syntax is used to describe elements in CSS? (from html.json)",
+  "choice":["A.Protectors","B.Selectors","C.Both a and b","D.None of the mentioned"],
+  "answer":"B",
+  "explanation":"CSS stylesheets have a very powerful syntax,known as selectors, for describing elements or sets of elements within a document."
+},{
+  "question":"Which of the following is an equivalent replacement of $(document).ready(f)? (from html.json)",
+  "choice":["A.jQuery(f)","B.$(f)","C.#(f)","D.None of the mentioned"],
+  "answer":"B",
+  "explanation":"The equivalent replacement of $(document).ready(f)is$(f)."
+},{
+  "question":"Which of the following is used to represent Visited hyperlink? (from html.json)",
+  "choice":["A.:visited","B.:clicked","C.:focus","D.:link"],
+  "answer":"A",
+  "explanation":"Visited represents visited hyperlink."
+},{
+  "question":"In______, :active applies only to hyperlinks whereas, other browsers allow it to be applied to any element. (from html.json)",
+  "choice":["A.IE7","B.Google Chrome22","C.Firefox 16.0.1","D.Firefox 12.0.1"],
+  "answer":"A",
+  "explanation":"In IE7 :active applies only to hyperlinks whereas, other browsers allow it to be applied to any element."
+},{
+  "question":"Why JavaScript is called as Lightweight Programming Language? (from html.json)",
+  "choice":["A.because we can add programming functionally inside JS","B.because JS is client side scripting","C.because JS can provide programming functionality inside but up to certain extend","D.because JS is available free of cost"],
+  "answer":"C",
+  "explanation":"JS is called as\"Lightweight Programming Language\" because it can include programming functionality but does not perform stronger operations like Java and C++."
+},{
+  "question":"Local Browser used for validations on the Web Pages uses______. (from html.json)",
+  "choice":["A.CSS","B.HTML","C.JAVA","D.JS"],
+  "answer":"D",
+  "explanation":""
+},{
+  "question":"Which property is used to specify typefaces? (from html.json)",
+  "choice":["A.font-family","B.font-name","C.font-face","D.font-type"],
+  "answer":"A",
+  "explanation":""
+},{
+  "question":"HTML Stands for______. (from html.json)",
+  "choice":["A.Hyper Text Makeup Language","B.Hyper Text Markup Lnaguage","C.None of these","D.Hyper Tech Markup Language"],
+  "answer":"B",
+  "explanation":""
+},{
+  "question":"HTML Tags are generally written in______. (from html.json)",
+  "choice":["A.Angle","B.Squart","C.Round","D.Curly"],
+  "answer":"A",
+  "explanation":""
+},{
+  "question":"Which is the method that operates on the return value of $()? (from html.json)",
+  "choice":["A.show()","B.css()","C.click()","D.done()"],
+  "answer":"B",
+  "explanation":"The css() method operator on the jQuery returned by $(),and returns that the same object, so that the show()method can be invoked next in a compact \"method chain\"."
+},{
+  "question":"How many type faces inside property \"font-family\"? (from html.json)",
+  "choice":["A.1","B.Maximum 2","C.No Limit","D.Maximum 3"],
+  "answer":"C",
+  "explanation":"The font-family property may use more than one typeface."
+},{
+  "question":"Select all the correct option(s).State the correct place of JS Code inside HTML- (from html.json)",
+  "choice":["A.Inside Body","B.Inside Head","C.All of these","D.Inside Single Javascript File"],
+  "answer":"C",
+  "explanation":""
+},{
+  "question":"HTML markup language is a set of Markup______. (from html.json)",
+  "choice":["A.Attributes","B.Sets","C.Groups","D.Tags"],
+  "answer":"D",
+  "explanation":""
+},{
+  "question":"Which of the following is used for parsing JSON text? (from html.json)",
+  "choice":["A.jQuery.each()","B.jQuery.parseJSON()","C.jQuery.noConflict()","D.None of the mentioned"],
+  "answer":"B",
+  "explanation":"jQuery.parseJSON()is used for parsing JSON text."
+},{
+  "question":"______attribute is used to specify the character encoding used in an external script file. (from html.json)",
+  "choice":["A.type","B.character","C.None of These","D.charset"],
+  "answer":"D",
+  "explanation":""
+},{
+  "question":"PC's running with Windows 3.x will have______. (from html.json)",
+  "choice":["A..htl","B..htm","C..hml","D..html"],
+  "answer":"B",
+  "explanation":"Windows 3.x only allows three letters after the dot.MAC OS and Windows 95/98 allow four,or more."
+},{
+  "question":"HTML was firstly proposed in year______. (from html.json)",
+  "choice":["A.2000","B.1995","C.1990","D.1980"],
+  "answer":"C",
+  "explanation":""
+},{
+  "question":"JavaScript Code can be called by using______. (from html.json)",
+  "choice":["A.Function/Method","B.Preprocessor","C.RMI","D.Triggering Event"],
+  "answer":"A",
+  "explanation":""
+},{
+  "question":"Multiple font faces are separated by______. (from html.json)",
+  "choice":["A.Semicolon","B.Comma","C.Dot","D.Slash"],
+  "answer":"B",
+  "explanation":""
+}
+]

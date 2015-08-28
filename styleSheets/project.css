@@ -1,0 +1,83 @@
+*{
+    font-family: cursive;
+}
+#mainDiv{
+    padding: 50px;
+    border: 12px dashed #245269;
+    border-radius: 10px;
+    font-size: larger;
+    transition: 1.5s ease;
+}
+#mainDiv:hover{
+    border-color: red;
+    transform: scale(1.1);
+}
+.jumbotron{
+    color:white;
+    background: -webkit-linear-gradient(-15deg, black, #53346D); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(-15deg, black, #53346D);  /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(-15deg, black, #53346D);  /* For Firefox 3.6 to 15 */
+    background: linear-gradient(-15deg, black, #53346D);  /* Standard syntax (must be last) */
+}
+footer{
+    padding-top: 10px;padding-left: 50px;
+    border-radius: 10px;
+}
+#mainDiv img{
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+.btn{
+    text-decoration: none;
+    border: 1px solid #3c3c3c;
+    color: #3c3c3c;
+    margin: 10px 0;
+    padding: 10px 30px;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    background: #ffffff;
+    cursor: pointer;
+    zoom: 1;
+    -webkit-backface-visibility: hidden;
+    border-radius: 0;
+}
+.btn:hover{
+    color:#ffffff;
+    background:#3c3c3c;
+    border-radius: 12px;
+}
+.btn:active{
+    color:#3c3c3c;
+    background: #ffffff;
+}
+accordion li{
+    list-style: none;
+    cursor: pointer;
+}
+accordion-group a{
+    cursor: pointer;
+}
+accordion{
+    -webkit-transition:all linear 0.3s;
+    transition:all linear 0.3s;
+}
+
+accordion.ng-hide{
+    width: 0;
+}
+
+
+#hideAccordDiv img{
+    float: left;
+    width: 40px;
+    height: 40px;
+    padding:0;
+    cursor: pointer;
+    opacity: 0.1;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+#hideAccordDiv img:hover{
+    opacity: 1;
+}

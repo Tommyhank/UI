@@ -28,16 +28,44 @@
             text-align: center;
             font-size: 25px;
         }
+        .innerDiv img:hover{
+            animation: shake .5s ease-in-out;
+        }
+        @keyframes shake {
+            0% {
+                transform: translateX(0);
+            }
+
+            20% {
+                transform: translateX(-10px);
+            }
+
+            40% {
+                transform: translateX(10px);
+            }
+
+            60% {
+                transform: translateX(-10px);
+            }
+
+            80% {
+                transform: translateX(10px);
+            }
+
+            100% {
+                transform: translateX(0);
+            }
+        }
     </style>
 </head>
 <body ng-controller="index">
     <div class="container" style="margin-top:250px">
-        <div class="col-md-6 col-xs-12">
+        <div class="col-md-6 col-xs-12 innerDiv">
             <a href="practice.html" ><img src="img/practice.jpg" tooltip="Let's have a practice!" tooltip-class="customClass" /><br/>
             <p>Practice</p>
             </a>
         </div>
-        <div class="col-md-6 col-xs-12">
+        <div class="col-md-6 col-xs-12 innerDiv">
             <a href="test.html" ><img src="img/test.jpg" tooltip="Let's see how much you can get!" tooltip-class="customClass" /><br/>
                 <p>Test</p>
             </a>

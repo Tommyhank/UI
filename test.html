@@ -3,54 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <title>Test</title>
-    <script src="scripts/angular.js"></script>
-    <script src="scripts/ui-bootstrap-tpls-0.13.3.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-animate.js"></script>
+    <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.13.3.js"></script>
+    <script src="scripts/countdowntimer.js"></script>
     <script src="scripts/project.js"></script>
-    <link href="styleSheets/bootstrap.min.css" rel="stylesheet" />
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styleSheets/project.css" rel="stylesheet">
 </head>
 <body ng-controller="testController">
+<br/>
+<accordion class="col-md-2" ng-hide="hideAccordion">
+    <accordion-group heading="Java" is-open=true>
+        <ul>
+            <li>
+                <a ng-click="changeJson('Java')">Java-Test-1</a>
+            </li>
+            <li>
+                <a ng-click="changeJson('Java')">Java-Test-2</a>
+            </li>
+        </ul>
+    </accordion-group>
+    <accordion-group heading="JavaScript">
+        <ul>
+            <li>
+                <a ng-click="changeJson('JavaScript')">JavaScript-Test-1</a>
+            </li>
+            <li>
+                <a ng-click="changeJson('JavaScript')">JavaScript-Test-2</a>
+            </li>
+        </ul>
+    </accordion-group>
+    <accordion-group heading="CSS">
+        <ul>
+            <li>
+                <a ng-click="changeJson('CSS')">CSS-Test-1</a>
+            </li>
+            <li>
+                <a ng-click="changeJson('CSS')">CSS-Test-2</a>
+            </li>
+        </ul>
+    </accordion-group>
+    <accordion-group heading="HTML">
+        <ul>
+            <li>
+                <a ng-click="changeJson('HTML')">HTML-Test-1</a>
+            </li>
+            <li>
+                <a ng-click="changeJson('HTML')">HTML-Test-2</a>
+            </li>
+        </ul>
+    </accordion-group>
+</accordion>
+<div id="hideAccordDiv" ng-click="hideAccordion=!hideAccordion" ><img src="img/sidebar.jpg" /></div>
 <div class="container">
-    <span>{{question}}</span><br/>
-    <form >
-        <label>
-            <input ng-disabled="submitted" ng-change="show()" type="radio" ng-model="userAnswer" value= "A">
-            {{choiceA}}
-        </label><br/>
-        <label>
-            <input ng-disabled="submitted" ng-change="show()" type="radio" ng-model="userAnswer" value="B">
-            {{choiceB}}
-        </label><br/>
-        <label>
-            <input ng-disabled="submitted" ng-change="show()" type="radio" ng-model="userAnswer" value="C">
-            {{choiceC}}
-        </label><br/>
-        <label>
-            <input ng-disabled="submitted" ng-change="show()" type="radio" ng-model="userAnswer" value="D">
-            {{choiceD}}
-        </label><br/>
+    <div class="jumbotron"><h2>{{htmlTitle}} Online Test</h2></div>
+    <div id="progressBarDiv" ng-click="changePage($event)" style="cursor: pointer">
+        <div>
+            <progress class="progress-striped active"><bar ng-repeat="bar in stacked track by $index" value="bar.value" type="{{bar.type}}"></bar></progress>
 
-<!--        <div class="well col-md-12">
-            <div ng-repeat="data in data">
-                {{data.question}}
-                <div ng-repeat="option in data.choice">{{option}}
-
-                </div><input type="text" ng-model="data.correctAnswer">
-            </div>
         </div>
-        {{data}}-->
-    </form>
-    <button ng-hide="i==0" ng-click="prev()"> previous</button>
-    <button ng-hide="i==(length-1)" ng-click="next()"> next</button>
-    <button onclick="location.href='index.html';"> back</button>
-    <span ng-hide=answerIsRight> {{wrongAnswer}}</span><br/>
-    <span ng-hide=answerIsRight>{{explanation}}</span><br/>
-    <div ng-show="i==(length-1)||submitted">
-        <button ng-disabled="submitted" ng-click="getScore()"> submit</button><br/>
-        <span>{{finalScore}}</span>
     </div>
 
+    <div id="mainDiv">
+        <div style="float: right; font-size: 30px"><span id="time" ng-hide="submitted"></span></div>
+        <div style="margin: auto;width: 60%;padding: 10px;">
+            <span>{{i+1}}: {{question}}</span><br/>
+            <form >
+                <label>
+                    <input ng-disabled="submitted" ng-change="show()" type="radio" ng-model="userAnswer" value= "A">
+                    {{choiceA}}
+                </label><br/>
+                <label>
+                    <input ng-disabled="submitted" ng-change="show()" type="radio" ng-model="userAnswer" value="B">
+                    {{choiceB}}
+                </label><br/>
+                <label>
+                    <input ng-disabled="submitted" ng-change="show()" type="radio" ng-model="userAnswer" value="C">
+                    {{choiceC}}
+                </label><br/>
+                <label>
+                    <input ng-disabled="submitted" ng-change="show()" type="radio" ng-model="userAnswer" value="D">
+                    {{choiceD}}
+                </label><br/>
+            </form>
+            <br/><span ng-hide=answerIsRight> {{wrongAnswer}}</span><br/>
+            <span ng-hide=answerIsRight>{{explanation}}</span><br/>
+            <div class="col-md-12">
 
+                <div class="col-md-1" ng-click="prev()">
+                    <div class="btn" ng-hide="i==0">previous</div>
+                </div>
+                <div class="col-md-offset-2 col-md-1" ng-click="getScore()" >
+                    <div class="btn" ng-show="i==(length-1)||submitted">submit</div>
+                </div>
+                <div class="col-md-offset-2 col-md-1" ng-click="next()" >
+                    <div class="btn" ng-hide="i==(length-1)">continue</div>
+                </div>
+                <div class="col-md-offset-2 col-md-1" onclick="location.href='index.html';" >
+                    <div class="btn">home</div>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <script type="text/ng-template" id="score.html">
+        <div align="center">
+            <div class="modal-header">
+                <h1 class="modal-title">Your score is:</h1>
+            </div>
+
+            <div class="modal-body">
+                <h1>{{finalScore}} / 100</h1>
+            </div>
+
+            <div class="modal-footer">
+                <button  type="button" ng-click="ok()">view answers</button>
+                <button  type="button" ng-click="cancel()">home</button>
+            </div>
+
+        </div>
+    </script>
+
+    <footer align="center">
+        <a href="http://thatjsdude.com/interview/index.html"><h2>Go to more Frontend Interview questions</h2></a>
+        <br/>
+        <hr>
+        <span style="float:left; color: #46b8da; text-shadow: 0.5px 1px black; font-size: 17px">Practice makes perfect!</span>
+        <div class="addthis_toolbox addthis_default_style " style="float:right">
+            <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+            <a class="addthis_button_tweet"></a>
+            <a class="addthis_button_pinterest_pinit" pi:pinit:layout="horizontal"></a>
+            <a class="addthis_counter addthis_pill_style"></a>
+        </div>
+        <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f8c637f46642484"></script>
+    </footer>
 
 </div>
 </body>

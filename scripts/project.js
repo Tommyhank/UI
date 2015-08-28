@@ -41,6 +41,7 @@ angular.module('myApp',['ui.bootstrap','ngAnimate'])
         $scope.next = function(){
             $scope.userAnswer="";
             $scope.showAnswer = false;
+            $scope.showExp = false;
             getData(Math.floor((Math.random() * localData.length)));
         };
         $scope.show = function(){

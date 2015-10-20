@@ -5,7 +5,26 @@ function CountDownTimer(duration, granularity) {
     this.running = false;
     this.startDate = Date.now();
 }
+CountDownTimer.prototype.again = function() {
+    var start = Date.now(),
+        that = this,
+        diff, obj;
+    (function timer() {
+        diff = that.duration - (((Date.now() - start) / 1000) | 0);
 
+        if (diff > 0) {
+            setTimeout(timer, that.granularity);
+        } else {
+            diff = 0;
+            that.running = false;
+        }
+
+        obj = CountDownTimer.parse(diff);
+        that.tickFtns.forEach(function(ftn) {
+            ftn.call(this, obj.minutes, obj.seconds);
+        }, that);
+    }());
+};
 CountDownTimer.prototype.start = function() {
     if (this.running) {
         return;

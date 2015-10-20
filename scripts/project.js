@@ -1,7 +1,6 @@
 /**
  * Created by Chao on 2015/8/24.
  */
-
 angular.module('myApp',['ui.bootstrap','ngAnimate'])
     .controller('index',function($scope){
     })
@@ -31,6 +30,7 @@ angular.module('myApp',['ui.bootstrap','ngAnimate'])
             localData.splice(i,1);
         };
         $scope.changeJson = function(str){
+
             $scope.htmlTitle = str;
             $http.get(str.toLowerCase()+'.json').success(function (data) {
                 localData=data;
